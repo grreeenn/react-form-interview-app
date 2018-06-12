@@ -1,0 +1,77 @@
+.Form-container {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display:block;
+    justify-self: center;
+    justify-content: start;
+    max-width: 400px;
+
+    margin:15px;
+}
+
+.Form {
+    display:grid;
+    grid-auto-flow: row;
+
+    justify-content: start;
+    align-content: center;
+}
+
+.Form-row {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: start;
+    align-content: center;
+}
+
+.Input-label {
+    grid-column: 1 / 2;
+    justify-self: start;
+    align-self: center;
+}
+
+.Form-input {
+    grid-column: 2 / 3;
+}
+
+.Input-error-container {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    justify-self: end;
+    font-size: small;
+    color: darkred;
+}
+
+.Form-submit-controls {
+    display: grid;
+    width: 100%;
+
+    margin:10px;
+
+    justify-content: center;
+}
+
+.Form-submit-button {
+    width: 100%;
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button.Form-submit-button:disabled {
+    background-color: #cdcdcd;
+}
+
+.Form-submit-message {
+    justify-content: center;
+    justify-self:center;
+}
+
