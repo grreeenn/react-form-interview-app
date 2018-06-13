@@ -7,7 +7,7 @@ import {sendForm} from 'emailjs-com';
  */
 export class Mailer {
     // EmailJS user ID
-    user_id: string = "user_e2oIX3MmShmk86a6PnrJJ";
+    user_id: string = "InsertYourUserIdHere";
     // ID of the email service used on EmailJS
     serviceName: string = "gmail";
 
